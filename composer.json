@@ -1,0 +1,19 @@
+{
+  "name": "lauro/php",
+  "description": "Estudando composer",
+  "type": "project",
+  "autoload": {
+    "psr-4": {
+      "Lauro\\Php\\": "src/"
+    }
+  },
+  "authors": [
+    {
+      "name": "Lauro Otavio Urbano",
+      "email": "74082012+laurourbano@users.noreply.github.com"
+    }
+  ],
+  "require": {
+    "mpdf/mpdf": "^6.1"
+  }
+}
