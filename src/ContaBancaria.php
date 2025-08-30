@@ -1,8 +1,9 @@
-<?php 
+<?php
 
 namespace Lauro\Php;
 
-class ContaBancaria {
+class ContaBancaria
+{
     private string $banco;
     private string $nomeTitular;
     private string $numeroAgencia;
@@ -10,10 +11,10 @@ class ContaBancaria {
     private float $saldo;
 
     public function __construct(
-        string $banco, 
-        string $nomeTitular, 
-        string $numeroAgencia, 
-        string $numeroConta, 
+        string $banco,
+        string $nomeTitular,
+        string $numeroAgencia,
+        string $numeroConta,
         float $saldo
     ) {
         $this->banco = $banco;
@@ -23,7 +24,8 @@ class ContaBancaria {
         $this->saldo = $saldo;
     }
 
-    public function exibirDadosDaConta(): array {
+    public function exibirDadosDaConta(): array
+    {
         return [
             'banco' => $this->banco,
             'nomeTitular' => $this->nomeTitular,
@@ -33,39 +35,44 @@ class ContaBancaria {
         ];
     }
 
-    public function depositar(float $valor): void {
+    public function depositar(float $valor): void
+    {
         $this->saldo += $valor;
     }
 
-    public function sacar(float $valor): void {
+    public function sacar(float $valor): void
+    {
         $this->saldo -= $valor;
     }
 
-    public function transferir(ContaBancaria $contaDestino, float $valor): void {
+    public function transferir(ContaBancaria $contaDestino, float $valor): void
+    {
         $this->sacar($valor);
         $contaDestino->depositar($valor);
     }
 
-    public function getSaldo(): float {
+    public function getSaldo(): float
+    {
         return $this->saldo;
     }
 
-    public function getBanco(): string {
+    public function getBanco(): string
+    {
         return $this->banco;
     }
 
-    public function getNomeTitular(): string {
+    public function getNomeTitular(): string
+    {
         return $this->nomeTitular;
     }
 
-    public function getNumeroAgencia(): string {
+    public function getNumeroAgencia(): string
+    {
         return $this->numeroAgencia;
     }
 
-    public function getNumeroConta(): string {
+    public function getNumeroConta(): string
+    {
         return $this->numeroConta;
     }
-
 }
-
-?>
