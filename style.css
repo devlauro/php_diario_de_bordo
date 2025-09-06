@@ -5,42 +5,44 @@ body {
     font-family: sans-serif;
     background-color: antiquewhite;
     color: #000;
-    text-align: center;
-    overflow: hidden;
-    height: 100dvh;
-    width: 100dvw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    scrollbar-color: #000 antiquewhite;
 }
 
-.container {
+main {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    gap: 10px;
-    border: 2px solid #000;
-    padding: 10px;
-    border-radius: 10px;
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-}
-
-.wrapper {
-    display: flex;
-    width: 30dvw;
-    height: 40dvh;
+    width: 100%;
+    margin: 5px;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     gap: 10px;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 5px;
+    border-radius: 10px;
+}
+
+.wrapper {
+    display: flex;
+    width: 25%;
+    height: 300px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
     border: 2px solid #000;
     border-radius: 10px;
     background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 input {
@@ -51,7 +53,7 @@ input {
 
 .btn {
     padding: 10px 20px;
-    background-color: antiquewhite;
+    background-color: aquamarine;
     color: #000;
     border: none;
     border-radius: 5px;
@@ -59,8 +61,14 @@ input {
     transition: background-color 0.3s ease;
 }
 
+.btn:hover {
+    background-color: darkturquoise;
+    border: none;
+}
+
 .box {
     display: flex;
+    width: 95%;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
@@ -69,6 +77,41 @@ input {
     border: 2px solid #000;
     padding: 10px;
     border-radius: 10px;
+    background-color: bisque;
+}
+
+header {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 10px;
+    padding: 10px;
     background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    background-color: antiquewhite;
+}
+
+ul {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-items: center;
+    flex-direction: row;
+    gap: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: antiquewhite;
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+
+}
+
+li a {
+    text-decoration: none;
 }
