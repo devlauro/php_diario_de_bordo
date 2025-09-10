@@ -6,6 +6,7 @@ body {
     background-color: antiquewhite;
     color: #000;
     scrollbar-color: #000 antiquewhite;
+
 }
 
 main {
@@ -17,6 +18,7 @@ main {
     align-items: center;
     flex-direction: column;
     gap: 10px;
+
 }
 
 .container {
@@ -29,12 +31,13 @@ main {
     flex-wrap: wrap;
     gap: 5px;
     border-radius: 10px;
+
 }
 
 .wrapper {
     display: flex;
-    width: 25%;
-    height: 300px;
+    width: 50%;
+    height: 400px;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
@@ -42,13 +45,8 @@ main {
     gap: 5px;
     border: 2px solid #000;
     border-radius: 10px;
-    background-color: #fff;
-}
-
-input {
     padding: 10px;
-    border: 2px solid #000;
-    border-radius: 5px;
+    background-color: antiquewhite;
 }
 
 .btn {
@@ -59,16 +57,18 @@ input {
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    flex: 1;
 }
 
 .btn:hover {
     background-color: darkturquoise;
     border: none;
+
 }
 
 .box {
     display: flex;
-    width: 95%;
+    width: 90%;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
@@ -78,6 +78,7 @@ input {
     padding: 10px;
     border-radius: 10px;
     background-color: bisque;
+    flex: 1;
 }
 
 header {
@@ -91,6 +92,7 @@ header {
     padding: 10px;
     background-color: #fff;
     background-color: antiquewhite;
+    flex: 1;
 }
 
 ul {
@@ -105,13 +107,62 @@ ul {
     border-radius: 10px;
     background-color: antiquewhite;
     text-decoration: none;
+    flex: 1;
 }
 
 li {
     list-style-type: none;
-
+    margin: 0;
+    padding: 0;
+    flex: 1;
 }
 
 li a {
     text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    font-size: 20px;
+    flex: 1;
+}
+
+p {
+    text-align: center;
+    width: 100%;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: #000;
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+    flex: 1;
+}
+
+input {
+    padding: 10px;
+    border: 2px solid #000;
+    border-radius: 5px;
+    flex: 1;
+}
+
+h2 {
+    text-align: center;
+    width: 100%;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: #000;
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+    flex: 1;
+}
+
+form {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+    flex: 1;
 }

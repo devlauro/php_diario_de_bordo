@@ -34,8 +34,7 @@
 
         <form action="<?= $_SERVER['PHP_SELF'] ?>" method="get">
           <h2>Exercício 4</h2>
-          <p>Converta reais em dólares - cotação fixa</p>
-          <p>O valor de conversão é fixo de <b>R$ 5,46</b> </p>
+          <p>Converta reais em dólares - cotação fixa. O valor de conversão é fixo de <b>R$ 5,46</b> </p>
           <input type="number" name="numeroquatro" placeholder="Digite seu número" step="0.01" min="0" required>
           <input type="submit" value="Enviar" class="btn">
         </form>
@@ -46,7 +45,8 @@
         $resultado = number_format($resultado, 2, ",", ".");
         echo "
           <div class='box'>
-              <p>O valor em dólares de <b>" . number_format($numero, 2, ",", ".") . "</b> reais é: <b>R$ $resultado</b></p>
+              <p>O valor da conversão de <b>BRL</b> <b> R$ " . number_format($numero, 2, ",", ".") . 
+              "</b> para <b>USD</b> é: <b>$ $resultado</b></p>
           </div>
         ";
         ?>
